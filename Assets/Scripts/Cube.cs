@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cube : Shape
+public class Cube : Shape // INHERITANCE
 {
 
     private void Start()
@@ -11,7 +11,7 @@ public class Cube : Shape
         shapeColor = "Red";
     }
 
-    protected override void ShapeClicked()
+    protected override void ShapeClicked() // POLYMORPHISM
     {
         shapeClicked = 1;
         Debug.Log(shapeColor + " " + shapeType + " clicked!");

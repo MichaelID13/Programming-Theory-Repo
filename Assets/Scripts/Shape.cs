@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Shape : MonoBehaviour
 {
-    protected string shapeType;
-    protected string shapeColor;
+    protected string shapeType; // ENCAPSULATION
+    protected string shapeColor; // ENCAPSULATION
 
     private int v_shapeClicked;
-    public int shapeClicked {
+    public int shapeClicked // ENCAPSULATION
+    {
         get { return v_shapeClicked; }
         set
         {
@@ -31,7 +32,7 @@ public class Shape : MonoBehaviour
         ShapeClicked();
     }
 
-    protected virtual void ShapeClicked()
+    protected virtual void ShapeClicked() // ABSTRACTION
     {
         shapeClicked = 1;
         Debug.Log("Shape clicked " + v_shapeClicked);
